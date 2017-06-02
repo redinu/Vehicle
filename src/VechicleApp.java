@@ -10,6 +10,9 @@ public class VechicleApp {
 		p.accelerate();
 		p.setSpeed(0);
 		p.stop();
+		p.flownBy();
+		
+		System.out.println();
 		
 		Boat b = new Boat();
 		
@@ -18,11 +21,17 @@ public class VechicleApp {
 		b.accelerate();
 		b.setSpeed(0);
 		b.stop();
+		b.drivenBy();
+		
+		System.out.println();
 		
 		Car c = new Car();
 		c.run(30);
 		c.setSpeed(0);
 		c.stop();
+		c.drivenBy();
+		
+		
 	}
 
 }

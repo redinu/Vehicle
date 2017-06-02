@@ -10,6 +10,7 @@ public class Plane extends Vehicle{
 	}
 	
 	private int speed;
+	private Person p = new Pilot();
 
 	public void run(int spd) {
 		speed = spd;
@@ -41,6 +42,12 @@ public class Plane extends Vehicle{
 
 	public void setSpeed(int speed) {
 		this.speed = speed;
+	}
+	
+	public void flownBy(){
+		
+		p.setName("Dori");
+		System.out.println("The pilot's name is " + p.getName());
 	}
 
 

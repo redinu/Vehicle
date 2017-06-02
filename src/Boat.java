@@ -2,6 +2,7 @@
 public class Boat extends Vehicle{
 	
 	private int speed;
+	private Person p = new Captain();
 
 	@Override
 	public void run(int spd) {
@@ -35,6 +36,12 @@ public class Boat extends Vehicle{
 	public void setSpeed(int speed) {
 		
 		this.speed = speed;
+	}
+	
+	public void drivenBy(){
+		
+		p.setName("Mark");
+		System.out.println("Captain " + p.getName() + "  is driving the boat " );
 	}
 
 

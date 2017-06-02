@@ -1,5 +1,7 @@
 
 public class Car extends Vehicle {
+	
+	Person p = new Driver();
 
 	private int speed;
 	
@@ -29,5 +31,10 @@ public class Car extends Vehicle {
 		this.speed = speed;
 	}
 	
+	public void drivenBy(){
+		
+		p.setName("Bob");
+		System.out.println("The car is being driven by " + p.getName());
+	}
 
 }
